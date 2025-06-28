@@ -1,0 +1,19 @@
+.sortArea>div{
+    width: 2vh; 
+    border: 1px solid rgba(0, 0, 0, 0.445); 
+    border-top: 0px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.selected{
+    background-color:red!important
+}
+
+.checked{
+    background-color: green!important;
+}
+
+small{
+    font-size: 1ch;
+    color:white
+}

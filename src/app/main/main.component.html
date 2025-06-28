@@ -1,0 +1,11 @@
+<div class="container-fluid bg-secondary text-center h-100 d-inline-block">
+  <div class="sortArea container d-flex justify-content-center">
+    <div class="bg-dark" *ngFor="let i of divs" [attr.id]="'SortItem' + i" [ngStyle]="{'height':(80/divs.length*(divs.length-i))+'vh'}"></div>
+
+  </div>
+
+  <div class="actionArea container my-auto d-inline-block ">
+    <button class="btn btn-primary mx-2 my-3" (click)="mix()"><i class="fa-solid fa-shuffle"></i> Karıştır</button>
+    <button class="btn btn-success mx-2 my-3" (click)="sort()"><i class="fa-solid fa-arrow-up-wide-short"></i> Sırala</button>
+  </div>
+</div>

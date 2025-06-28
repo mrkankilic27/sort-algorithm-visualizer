@@ -1,0 +1,19 @@
+.dropdown-menu>small{
+  color: white;
+}
+
+.dropdown-menu>a:hover{
+  background-color: black;
+}
+
+span{
+  color: white;
+}
+
+hr{
+  background-color: white;
+}
+
+.disabled{
+  color: rgba(255, 255, 255, 0.178) !important;
+}

@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">ba2dzc</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Algoritma Seçin
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-light" id="bubble" (click)="chooseAlgorithm('bubble')">Bubble Sort</a>
+          <a class="dropdown-item text-light" id="counting" (click)="chooseAlgorithm('counting')">Counting Sort</a>
+          <a class="dropdown-item text-light" id="insertion" (click)="chooseAlgorithm('insertion')">Insertion Sort</a>
+          <a class="dropdown-item text-light" id="radix" (click)="chooseAlgorithm('radix')">Radix Sort</a>
+          <a class="dropdown-item text-light" id="selection" (click)="chooseAlgorithm('selection')">Selection Sort</a>
+          <a class="dropdown-item text-light disabled" id="binary" (click)="chooseAlgorithm('binary')">Binary Sort</a>
+          <a class="dropdown-item text-light disabled" id="bucket" (click)="chooseAlgorithm('bucket')">Bucket Sort</a>
+          <a class="dropdown-item text-light disabled" id="heap" (click)="chooseAlgorithm('heap')">Heap Sort</a>
+          <a class="dropdown-item text-light disabled" id="merge" (click)="chooseAlgorithm('merge')">Merge Sort</a>
+          <a class="dropdown-item text-light disabled" id="shell" (click)="chooseAlgorithm('shell')">Shell Sort</a>
+          <a class="dropdown-item text-light disabled" id="quick" (click)="chooseAlgorithm('quick')">Quick Sort</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item text-light" id="bogo" (click)="chooseAlgorithm('bogo')" data-toggle="tooltip" data-placement="left" title="Bogo algoritması tüm elemanlar doğru sıralamaya girene kadar karıştırma işlemi yapar. Kutu sayısını yüksek tutmayın.">Bogo Sort <i class="fa-solid fa-skull"></i></a>
+          <hr>
+          <small>Disabled algorithms have bugs or are not yet complete.</small>
+        </div>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="false" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+        <div class="dropdown-menu bg-dark dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+          <span class="ml-2">Hız : <output id="hizValue">50</output></span>
+            <input type="range" class="form-range mx-3" min="1" max="100" value="50" (input)="hizBelirle()" name="speed"
+              id="speed">
+
+          <div class="dropdown-divider"></div>
+
+          <span class="ml-2">Kutu Sayısı : <output id="boxValue">100</output></span>
+            <input type="range" class="form-range mx-3" min="5" max="150" value="100" (input)="boxBelirle()"
+              name="boxCount" id="boxCount">
+
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
